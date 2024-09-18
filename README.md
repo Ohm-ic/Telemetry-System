@@ -38,8 +38,8 @@ To set up this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/mqtt-sensor-data.git
-   cd mqtt-sensor-data
+   git clone https://github.com/Ohm-ic/Telemetry-System.git
+   cd Telemetry-System
 
 Install required libraries:
 Ensure you have the ESP-IDF framework installed. You may need to install specific libraries for MQTT, I2C, and sensor handling:
@@ -112,8 +112,8 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 Contact
 For questions or feedback, please reach out:
-Your Name - your.email@example.com
-Project Link: https://github.com/yourusername/mqtt-sensor-data
+Your Name - hariomagrahari@gmail.com
+Project Link: https://github.com/Ohm-ic/Telemetry-System
 Thank you for checking out this project! We hope you find it useful for your IoT applications.
 text
 
