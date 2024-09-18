@@ -1,0 +1,283 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (S
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_dr�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 18 2024 11:44:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=267d8h (157656) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00036800 vaddr=3ffb0000 size=03f34h ( 16180) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a73c vaddr=40080000 size=058dch ( 22748) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2b08h (666376) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e2b30 vaddr=400858dc size=12e3ch ( 77372) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     MQTT_DEV[0m
+[0;32mI (473) app_init: App version:      1[0m
+[0;32mI (478) app_init: Compile time:     Sep 18 2024 11:44:06[0m
+[0;32mI (484) app_init: ELF file SHA256:  59c65f994...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (493) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (498) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (503) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (508) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (515) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFB87E8 len 00027818 (158 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 40098718 len 000078E8 (30 KiB): IRAM[0m
+[0;32mI (548) spi_flash: detected chip: generic[0m
+[0;32mI (551) spi_flash: flash io: dio[0m
+[0;33mW (555) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+I (607) wifi:wifi driver task: 3ffc06f0, prio:23, stack:6656, core=0
+I (617) wifi:wifi firmware version: 0caa81945
+I (617) wifi:wifi certification version: v7.0
+I (617) wifi:config NVS flash: enabled
+I (617) wifi:config nano formating: disabled
+I (617) wifi:Init data frame dynamic rx buffer num: 32
+I (627) wifi:Init static rx mgmt buffer num: 5
+I (627) wifi:Init management short buffer num: 32
+I (637) wifi:Init dynamic tx buffer num: 32
+I (637) wifi:Init static rx buffer size: 1600
+I (647) wifi:Init static rx buffer num: 10
+I (647) wifi:Init dynamic rx buffer num: 32
+[0;32mI (647) wifi_init: rx ba win: 6[0m
+[0;32mI (657) wifi_init: accept mbox: 6[0m
+[0;32mI (657) wifi_init: tcpip mbox: 32[0m
+[0;32mI (657) wifi_init: udp mbox: 6[0m
+[0;32mI (667) wifi_init: tcp mbox: 6[0m
+[0;32mI (667) wifi_init: tcp tx win: 5760[0m
+[0;32mI (677) wifi_init: tcp rx win: 5760[0m
+[0;32mI (677) wifi_init: tcp mss: 1440[0m
+[0;32mI (677) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (687) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (697) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (777) wifi:mode : sta (b0:a7:32:2b:8e:84)
+I (777) wifi:enable tsf
+I (797) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1, snd_ch_cfg:0x0
+I (797) wifi:state: init -> auth (0xb0)
+I (797) wifi:state: auth -> assoc (0x0)
+I (807) wifi:state: assoc -> run (0x10)
+I (927) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)
+I (927) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:0(recipient)
+I (937) wifi:[ADDBA]RX DELBA, reason:39, delete tid:4, initiator:1(originator)
+I (947) wifi:connected with TP-Link_4548, aid = 2, channel 3, 40U, bssid = 28:87:ba:2d:45:48
+I (947) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (957) wifi:pm start, type: 1
+
+I (957) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (987) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (987) wifi:<ba-add>idx:0 (ifx:0, 28:87:ba:2d:45:48), tid:0, ssn:3, winSize:64
+[0;32mI (2467) esp_netif_handlers: sta ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2467) MQTT_MPU6050_RTC: Got IP: 192.168.1.100[0m
+[0;32mI (2467) MQTT_MPU6050_RTC: Initializing SNTP[0m
+[0;32mI (2477) MQTT_MPU6050_RTC: Waiting for system time to be set... (1/345600)[0m
+[0;32mI (4477) MQTT_MPU6050_RTC: Waiting for system time to be set... (2/345600)[0m
+[0;32mI (5887) MQTT_MPU6050_RTC: MPU6050 device ID: 104[0m
+[0;32mI (5887) MQTT_MPU6050_RTC: Other event id:7[0m
+[0;32mI (6477) MQTT_MPU6050_RTC: Waiting for system time to be set... (3/345600)[0m
+[0;32mI (6907) main_task: Returned from app_main()[0m
+[0;32mI (7547) MQTT_MPU6050_RTC: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7867) MQTT_MPU6050_RTC: MQTT_EVENT_PUBLISHED, msg_id=35220[0m
+[0;32mI (8477) MQTT_MPU6050_RTC: Waiting for system time to be set... (4/345600)[0m
+[0;32mI (10477) MQTT_MPU6050_RTC: Waiting for system time to be set... (5/345600)[0m
+[0;31mE (10907) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (10907) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (10907) task_wdt: Tasks currently running:[0m
+[0;31mE (10907) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (10907) task_wdt: CPU 1: mqtt_publish_ta[0m
+[0;31mE (10907) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x4008501A:0x3FFB25B0 0x40083445:0x3FFB25D0 0x400D900B:0x3FFDAD10 0x4008B13D:0x3FFDAE90
+
+[0;32mI (12477) MQTT_MPU6050_RTC: Waiting for system time to be set... (6/345600)[0m
+[0;32mI (14477) MQTT_MPU6050_RTC: Waiting for system time to be set... (7/345600)[0m
+[0;31mE (15907) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (15907) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (15907) task_wdt: Tasks currently running:[0m
+[0;31mE (15907) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (15907) task_wdt: CPU 1: mqtt_publish_ta[0m
+[0;31mE (15907) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x4008501A:0x3FFB25B0 0x40083445:0x3FFB25D0 0x400D900B:0x3FFDAD10 0x4008B13D:0x3FFDAE90
+
+[0;32mI (16477) MQTT_MPU6050_RTC: Waiting for system time to be set... (8/345600)[0m
+[0;32mI (18477) MQTT_MPU6050_RTC: Waiting for system time to be set... (9/345600)[0m
+[0;32mI (20477) MQTT_MPU6050_RTC: Waiting for system time to be set... (10/345600)[0m
+[0;31mE (20907) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (20907) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (20907) task_wdt: Tasks currently running:[0m
+[0;31mE (20907) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (20907) task_wdt: CPU 1: mqtt_publish_ta[0m
+[0;31mE (20907) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x4008501A:0x3FFB25B0 0x40083445:0x3FFB25D0 0x400D900B:0x3FFDAD10 0x4008B13D:0x3FFDAE90
+
+[0;32mI (22477) MQTT_MPU6050_RTC: Waiting for system time to be set... (11/345600)[0m
+[0;32mI (24477) MQTT_MPU6050_RTC: Waiting for system time to be set... (12/345600)[0m
+[0;31mE (25907) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (25907) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (25907) task_wdt: Tasks currently running:[0m
+[0;31mE (25907) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (25907) task_wdt: CPU 1: mqtt_publish_ta[0m
+[0;31mE (25907) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x4008501A:0x3FFB25B0 0x40083445:0x3FFB25D0 0x400D900B:0x3FFDAD10 0x4008B13D:0x3FFDAE90
+
+[0;32mI (26477) MQTT_MPU6050_RTC: Waiting for system time to be set... (13/345600)[0m
+[0;32mI (28477) MQTT_MPU6050_RTC: Waiting for system time to be set... (14/345600)[0m
+[0;32mI (30477) MQTT_MPU6050_RTC: Waiting for system time to be set... (15/345600)[0m
+[0;31mE (30907) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (30907) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (30907) task_wdt: Tasks currently running:[0m
+[0;31mE (30907) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (30907) task_wdt: CPU 1: mqtt_publish_ta[0m
+[0;31mE (30907) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x4008501A:0x3FFB25B0 0x40083445:0x3FFB25D0 0x400D900B:0x3FFDAD10 0x4008B13D:0x3FFDAE90
+
+[0;32mI (32477) MQTT_MPU6050_RTC: Waiting for system time to be set... (16/345600)[0m
+[0;32mI (34477) MQTT_MPU6050_RTC: Waiting for system time to be set... (17/345600)[0m
+I (35497) wifi:<ba-add>idx:1 (ifx:0, 28:87:ba:2d:45:48), tid:4, ssn:1, winSize:64
+[0;31mE (35907) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (35907) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (35907) task_wdt: Tasks currently running:[0m
+[0;31mE (35907) task_wdt: CPU 0: esp_timer[0m
+[0;31mE (35907) task_wdt: CPU 1: mqtt_publish_ta[0m
+[0;31mE (35907) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x4008501A:0x3FFB25B0 0x40083445:0x3FFB25D0 0x400D900B:0x3FFDAD10 0x4008B13D:0x3FFDAE90
+
+[0;32mI (36477) MQTT_MPU6050_RTC: Time synchronized successfully[0m
+[0;32mI (36477) MQTT_MPU6050_RTC: RTC time set successfully[0m
+Time: 1726642280   |   Roll: -23224076.00  |  Pitch: -3034967.75   |   Distance:3.28 
+Time: 1726642281   |   Roll: -248449.84  |  Pitch: -32472.46   |   Distance:3.26 
+Time: 1726642282   |   Roll: -4045.21  |  Pitch: -533.21   |   Distance:3.76 
+Time: 1726642283   |   Roll: -68.00  |  Pitch: -13.44   |   Distance:3.24 
+Time: 1726642284   |   Roll: -3.60  |  Pitch: -5.01   |   Distance:3.26 
+Time: 1726642285   |   Roll: -2.56  |  Pitch: -4.89   |   Distance:3.72 
+Time: 1726642286   |   Roll: -2.53  |  Pitch: -4.89   |   Distance:3.74 
+Time: 1726642287   |   Roll: -2.50  |  Pitch: -4.89   |   Distance:2.83 
+Time: 1726642288   |   Roll: -2.54  |  Pitch: -4.88   |   Distance:3.72 
+Time: 1726642289   |   Roll: -2.54  |  Pitch: -4.89   |   Distance:3.72 
+Time: 1726642290   |   Roll: -2.53  |  Pitch: -4.88   |   Distance:3.24 
+Time: 1726642291   |   Roll: -2.52  |  Pitch: -4.89   |   Distance:3.26 
+Time: 1726642292   |   Roll: -2.52  |  Pitch: -4.87   |   Distance:3.26 
+Time: 1726642293   |   Roll: -2.51  |  Pitch: -4.87   |   Distance:3.26 
+Time: 1726642294   |   Roll: -2.54  |  Pitch: -4.88   |   Distance:3.26 
+Time: 1726642295   |   Roll: -2.52  |  Pitch: -4.86   |   Distance:3.26 
+Time: 1726642296   |   Roll: -2.51  |  Pitch: -4.87   |   Distance:3.26 
+Time: 1726642297   |   Roll: -2.52  |  Pitch: -4.88   |   Distance:3.26 
+Time: 1726642298   |   Roll: -2.53  |  Pitch: -4.88   |   Distance:3.26 
+Time: 1726642299   |   Roll: -2.51  |  Pitch: -4.87   |   Distance:3.24 
+Time: 1726642300   |   Roll: -2.53  |  Pitch: -4.87   |   Distance:3.26 
+Time: 1726642301   |   Roll: -2.53  |  Pitch: -4.88   |   Distance:3.26 
+Time: 1726642302   |   Roll: -2.52  |  Pitch: -4.89   |   Distance:3.26 
+Time: 1726642303   |   Roll: -2.52  |  Pitch: -4.89   |   Distance:3.24 
+Time: 1726642304   |   Roll: -2.53  |  Pitch: -4.89   |   Distance:2.84 
+Time: 1726642305   |   Roll: -2.52  |  Pitch: -4.89   |   Distance:3.28 
+Time: 1726642306   |   Roll: -2.52  |  Pitch: -4.89   |   Distance:3.26 
+Time: 1726642307   |   Roll: -2.52  |  Pitch: -4.89   |   Distance:3.24 
+Time: 1726642308   |   Roll: -2.82  |  Pitch: -5.43   |   Distance:3.28 
+Time: 1726642309   |   Roll: -2.52  |  Pitch: -4.89   |   Distance:3.24 
+Time: 1726642310   |   Roll: -2.50  |  Pitch: -4.89   |   Distance:3.26 
+Time: 1726642311   |   Roll: -2.50  |  Pitch: -4.90   |   Distance:3.26 
+Time: 1726642312   |   Roll: -2.78  |  Pitch: -5.09   |   Distance:3.26 
+Time: 1726642313   |   Roll: -2.54  |  Pitch: -4.90   |   Distance:3.24 
+Time: 1726642314   |   Roll: -2.57  |  Pitch: -4.88   |   Distance:3.28 
+Time: 1726642315   |   Roll: -2.63  |  Pitch: -4.69   |   Distance:3.33 
+Time: 1726642316   |   Roll: -2.48  |  Pitch: -4.67   |   Distance:3.14 
+Time: 1726642317   |   Roll: -3.82  |  Pitch: 1.12   |   Distance:3.79 
+Time: 1726642318   |   Roll: -3.12  |  Pitch: 1.20   |   Distance:3.55 
+Time: 1726642319   |   Roll: -2.67  |  Pitch: -4.42   |   Distance:3.55 
+Time: 1726642320   |   Roll: -2.96  |  Pitch: -5.10   |   Distance:3.55 
+Time: 1726642321   |   Roll: -2.66  |  Pitch: -4.63   |   Distance:3.57 
+Time: 1726642322   |   Roll: -2.64  |  Pitch: -4.63   |   Distance:3.57 
+Time: 1726642323   |   Roll: -2.64  |  Pitch: -4.63   |   Distance:3.57 
+Time: 1726642324   |   Roll: -2.94  |  Pitch: -5.17   |   Distance:3.57 
+Time: 1726642325   |   Roll: -2.65  |  Pitch: -4.63   |   Distance:3.57 
+Time: 1726642326   |   Roll: -2.62  |  Pitch: -4.64   |   Distance:3.57 
+Time: 1726642327   |   Roll: -2.64  |  Pitch: -4.65   |   Distance:3.57 
+Time: 1726642328   |   Roll: -2.63  |  Pitch: -4.64   |   Distance:3.57 
+Time: 1726642329   |   Roll: -2.63  |  Pitch: -4.67   |   Distance:3.12 
+Time: 1726642330   |   Roll: -2.61  |  Pitch: -4.78   |   Distance:9.34 
+Time: 1726642331   |   Roll: -2.64  |  Pitch: -4.74   |   Distance:3.57 
+Time: 1726642332   |   Roll: -2.62  |  Pitch: -4.70   |   Distance:3.57 
+Time: 1726642333   |   Roll: -2.62  |  Pitch: -4.71   |   Distance:3.57 
+Time: 1726642334   |   Roll: -2.62  |  Pitch: -4.70   |   Distance:3.53 
+Time: 1726642335   |   Roll: -2.63  |  Pitch: -4.72   |   Distance:3.55 
+Time: 1726642336   |   Roll: -2.64  |  Pitch: -4.71   |   Distance:3.57 
+Time: 1726642337   |   Roll: -2.61  |  Pitch: -4.69   |   Distance:3.57 
+Time: 1726642338   |   Roll: -2.90  |  Pitch: -5.23   |   Distance:6.14 
+Time: 1726642339   |   Roll: -2.61  |  Pitch: -4.71   |   Distance:3.59 
+Time: 1726642340   |   Roll: -2.61  |  Pitch: -4.71   |   Distance:3.57 
+Time: 1726642341   |   Roll: -2.61  |  Pitch: -4.71   |   Distance:3.62 
+Time: 1726642342   |   Roll: -2.48  |  Pitch: -4.72   |   Distance:4.40 
+Time: 1726642343   |   Roll: -2.54  |  Pitch: -4.29   |   Distance:10.95 
+Time: 1726642344   |   Roll: -3.36  |  Pitch: -2.50   |   Distance:10.97 
+Time: 1726642345   |   Roll: -3.39  |  Pitch: -2.34   |   Distance:10.95 
+Time: 1726642346   |   Roll: -3.39  |  Pitch: -2.34   |   Distance:10.97 
+Time: 1726642347   |   Roll: -3.38  |  Pitch: -2.35   |   Distance:10.95 
+Time: 1726642348   |   Roll: -3.39  |  Pitch: -2.36   |   Distance:10.98 
+Time: 1726642349   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:10.98 
+Time: 1726642350   |   Roll: -3.50  |  Pitch: -2.38   |   Distance:10.98 
+Time: 1726642351   |   Roll: -3.18  |  Pitch: -2.34   |   Distance:10.98 
+Time: 1726642352   |   Roll: -3.38  |  Pitch: -2.39   |   Distance:10.95 
+Time: 1726642353   |   Roll: -3.37  |  Pitch: -2.40   |   Distance:10.95 
+Time: 1726642354   |   Roll: -3.37  |  Pitch: -2.39   |   Distance:10.95 
+Time: 1726642355   |   Roll: -5.60  |  Pitch: -1.51   |   Distance:62.16 
+Time: 1726642356   |   Roll: -16.03  |  Pitch: -29.03   |   Distance:97.83 
+Time: 1726642357   |   Roll: 1.36  |  Pitch: -13.59   |   Distance:96.45 
+Time: 1726642358   |   Roll: -2.64  |  Pitch: -17.92   |   Distance:5.53 
+Time: 1726642359   |   Roll: -1.65  |  Pitch: -17.79   |   Distance:93.95 
+Time: 1726642360   |   Roll: 3.41  |  Pitch: -14.41   |   Distance:4.48 
+Time: 1726642361   |   Roll: -11.86  |  Pitch: -18.56   |   Distance:91.93 
+Time: 1726642362   |   Roll: -5.50  |  Pitch: -6.19   |   Distance:46.47 
+Time: 1726642363   |   Roll: 17.72  |  Pitch: 34.18   |   Distance:26.66 
+Time: 1726642364   |   Roll: 18.99  |  Pitch: 27.50   |   Distance:41.41 
+Time: 1726642365   |   Roll: 10.21  |  Pitch: -8.47   |   Distance:131.24 
+Time: 1726642366   |   Roll: 27.59  |  Pitch: 0.64   |   Distance:131.22 
+Time: 1726642367   |   Roll: 37.64  |  Pitch: 13.20   |   Distance:8.66 
+Time: 1726642368   |   Roll: 46.31  |  Pitch: 31.66   |   Distance:10.48 
+Time: 1726642369   |   Roll: 29.92  |  Pitch: 8.94   |   Distance:188.93 
+Time: 1726642370   |   Roll: 47.83  |  Pitch: 16.11   |   Distance:1213.31 
+Time: 1726642371   |   Roll: 22.90  |  Pitch: -39.02   |   Distance:95.16 
+Time: 1726642372   |   Roll: -1.05  |  Pitch: -10.70   |   Distance:49.43 
+Time: 1726642373   |   Roll: -1.47  |  Pitch: -5.93   |   Distance:93.14 
+Time: 1726642374   |   Roll: -1.60  |  Pitch: -6.49   |   Distance:51.19 
+Time: 1726642375   |   Roll: -1.45  |  Pitch: -5.88   |   Distance:49.90 

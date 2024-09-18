@@ -1,0 +1,149 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM16 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM16 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d94b0: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+[0m
+[0;33m0x401706b8: queue_send_wrapper at C:/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c:297
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d94ad: mpu6050_read at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:71
+0x400d964b: mpu6050_get_deviceid at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/mpu6050.c:108
+0x400d912f: test_mpu6050 at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:444
+0x400d91eb: app_main at C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:476
+0x40170a9f: main_task at C:/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008b13d: vPortTaskWrapper at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

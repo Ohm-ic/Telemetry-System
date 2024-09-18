@@ -1,0 +1,1043 @@
+7 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_dr�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 18 2024 11:44:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=266d8h (157400) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00036700 vaddr=3ffb0000 size=03f34h ( 16180) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a63c vaddr=40080000 size=059dch ( 23004) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2a20h (666144) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e2a48 vaddr=400859dc size=12d3ch ( 77116) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (456) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     MQTT_DEV[0m
+[0;32mI (473) app_init: App version:      1[0m
+[0;32mI (477) app_init: Compile time:     Sep 18 2024 11:44:06[0m
+[0;32mI (483) app_init: ELF file SHA256:  224c54ee1...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (493) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (498) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (503) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (508) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (515) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFB87E8 len 00027818 (158 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 40098718 len 000078E8 (30 KiB): IRAM[0m
+[0;32mI (548) spi_flash: detected chip: generic[0m
+[0;32mI (551) spi_flash: flash io: dio[0m
+[0;33mW (555) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+I (606) wifi:wifi driver task: 3ffc05b4, prio:23, stack:6656, core=0
+I (606) wifi:wifi firmware version: 0caa81945
+I (606) wifi:wifi certification version: v7.0
+I (606) wifi:config NVS flash: enabled
+I (606) wifi:config nano formating: disabled
+I (616) wifi:Init data frame dynamic rx buffer num: 32
+I (616) wifi:Init static rx mgmt buffer num: 5
+I (626) wifi:Init management short buffer num: 32
+I (626) wifi:Init dynamic tx buffer num: 32
+I (626) wifi:Init static rx buffer size: 1600
+I (636) wifi:Init static rx buffer num: 10
+I (636) wifi:Init dynamic rx buffer num: 32
+[0;32mI (646) wifi_init: rx ba win: 6[0m
+[0;32mI (646) wifi_init: accept mbox: 6[0m
+[0;32mI (646) wifi_init: tcpip mbox: 32[0m
+[0;32mI (656) wifi_init: udp mbox: 6[0m
+[0;32mI (656) wifi_init: tcp mbox: 6[0m
+[0;32mI (656) wifi_init: tcp tx win: 5760[0m
+[0;32mI (666) wifi_init: tcp rx win: 5760[0m
+[0;32mI (666) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (676) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (706) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (706) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (776) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+I (796) wifi:mode : sta (b0:a7:32:2b:8e:84)
+I (796) wifi:enable tsf
+I (1316) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1, snd_ch_cfg:0x0
+I (1316) wifi:state: init -> auth (0xb0)
+I (1326) wifi:state: auth -> assoc (0x0)
+I (1336) wifi:state: assoc -> run (0x10)
+I (1496) wifi:connected with TP-Link_4548, aid = 2, channel 3, 40U, bssid = 28:87:ba:2d:45:48
+I (1496) wifi:security: WPA2-PSK, phy: bgn, rssi: -36
+I (1516) wifi:pm start, type: 1
+
+I (1516) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1526) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1546) wifi:<ba-add>idx:0 (ifx:0, 28:87:ba:2d:45:48), tid:0, ssn:2, winSize:64
+[0;32mI (3026) esp_netif_handlers: sta ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3026) MQTT_MPU6050_RTC: Got IP: 192.168.1.100[0m
+[0;32mI (3026) MQTT_MPU6050_RTC: Initializing SNTP[0m
+[0;32mI (3036) MQTT_MPU6050_RTC: Waiting for system time to be set... (1/345600)[0m
+[0;32mI (5036) MQTT_MPU6050_RTC: Waiting for system time to be set... (2/345600)[0m
+[0;32mI (5896) MQTT_MPU6050_RTC: Other event id:7[0m
+[0;32mI (6926) main_task: Returned from app_main()[0m
+[0;32mI (7036) MQTT_MPU6050_RTC: Waiting for system time to be set... (3/345600)[0m
+I (7246) wifi:<ba-add>idx:1 (ifx:0, 28:87:ba:2d:45:48), tid:4, ssn:1, winSize:64
+[0;32mI (7456) MQTT_MPU6050_RTC: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7726) MQTT_MPU6050_RTC: MQTT_EVENT_PUBLISHED, msg_id=65266[0m
+[0;32mI (9036) MQTT_MPU6050_RTC: Time synchronized successfully[0m
+[0;32mI (9036) MQTT_MPU6050_RTC: RTC time set successfully[0m
+Time: 1726640133   |   Roll: -14011501.00  |  Pitch: -370682.44   |   Distance:91.52 
+Time: 1726640134   |   Roll: -14240.57  |  Pitch: -386.46   |   Distance:91.52 
+Time: 1726640135   |   Roll: -16.53  |  Pitch: -10.17   |   Distance:91.53 
+Time: 1726640136   |   Roll: -1.96  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640137   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:91.52 
+Time: 1726640138   |   Roll: -2.19  |  Pitch: -9.78   |   Distance:91.53 
+Time: 1726640139   |   Roll: -1.49  |  Pitch: -8.81   |   Distance:91.53 
+Time: 1726640140   |   Roll: -1.65  |  Pitch: -8.82   |   Distance:91.53 
+Time: 1726640141   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640142   |   Roll: -1.66  |  Pitch: -8.80   |   Distance:91.52 
+Time: 1726640143   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.97 
+Time: 1726640144   |   Roll: -1.67  |  Pitch: -8.80   |   Distance:91.53 
+Time: 1726640145   |   Roll: -1.68  |  Pitch: -8.80   |   Distance:91.53 
+Time: 1726640146   |   Roll: -1.66  |  Pitch: -8.81   |   Distance:92.41 
+Time: 1726640147   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:92.00 
+Time: 1726640148   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:92.43 
+Time: 1726640149   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.55 
+Time: 1726640150   |   Roll: -1.86  |  Pitch: -9.80   |   Distance:91.53 
+Time: 1726640151   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:92.45 
+Time: 1726640152   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640153   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640154   |   Roll: -1.66  |  Pitch: -8.80   |   Distance:91.52 
+Time: 1726640155   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640156   |   Roll: -1.66  |  Pitch: -8.80   |   Distance:92.00 
+Time: 1726640157   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640158   |   Roll: -1.87  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640159   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.55 
+Time: 1726640160   |   Roll: -1.65  |  Pitch: -8.79   |   Distance:92.41 
+Time: 1726640161   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640162   |   Roll: -1.84  |  Pitch: -9.78   |   Distance:91.55 
+Time: 1726640163   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.97 
+Time: 1726640164   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640165   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640166   |   Roll: -1.84  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640167   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640168   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640169   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640170   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640171   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640172   |   Roll: -1.66  |  Pitch: -8.80   |   Distance:91.53 
+Time: 1726640173   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640174   |   Roll: -1.85  |  Pitch: -9.78   |   Distance:91.53 
+Time: 1726640175   |   Roll: -1.67  |  Pitch: -8.80   |   Distance:91.53 
+Time: 1726640176   |   Roll: -1.87  |  Pitch: -9.76   |   Distance:92.00 
+Time: 1726640177   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640178   |   Roll: -1.86  |  Pitch: -9.78   |   Distance:92.41 
+Time: 1726640179   |   Roll: -1.84  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640180   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640181   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.52 
+Time: 1726640182   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.55 
+Time: 1726640183   |   Roll: -1.84  |  Pitch: -9.79   |   Distance:92.40 
+Time: 1726640184   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640185   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:92.41 
+Time: 1726640186   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640187   |   Roll: -1.64  |  Pitch: -8.79   |   Distance:92.41 
+Time: 1726640188   |   Roll: -1.64  |  Pitch: -8.80   |   Distance:91.53 
+Time: 1726640189   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640190   |   Roll: -1.65  |  Pitch: -8.79   |   Distance:91.55 
+Time: 1726640191   |   Roll: -1.83  |  Pitch: -9.76   |   Distance:92.41 
+Time: 1726640192   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:92.00 
+Time: 1726640193   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:92.41 
+Time: 1726640194   |   Roll: -1.83  |  Pitch: -9.75   |   Distance:91.55 
+Time: 1726640195   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:92.41 
+Time: 1726640196   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640197   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640198   |   Roll: -1.84  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640199   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:92.41 
+Time: 1726640200   |   Roll: -1.68  |  Pitch: -8.81   |   Distance:91.52 
+Time: 1726640201   |   Roll: -1.65  |  Pitch: -8.80   |   Distance:91.52 
+Time: 1726640202   |   Roll: -1.68  |  Pitch: -8.80   |   Distance:91.52 
+Time: 1726640203   |   Roll: -1.83  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640204   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640205   |   Roll: -1.68  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640206   |   Roll: -1.65  |  Pitch: -8.81   |   Distance:92.40 
+Time: 1726640207   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640208   |   Roll: -1.67  |  Pitch: -8.80   |   Distance:92.41 
+Time: 1726640209   |   Roll: -1.83  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640210   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640211   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640212   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640213   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640214   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640215   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640216   |   Roll: -1.83  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640217   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640218   |   Roll: -1.83  |  Pitch: -9.73   |   Distance:92.43 
+Time: 1726640219   |   Roll: -1.61  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640220   |   Roll: -1.48  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640221   |   Roll: -1.85  |  Pitch: -9.78   |   Distance:91.53 
+Time: 1726640222   |   Roll: -1.66  |  Pitch: -8.80   |   Distance:91.55 
+Time: 1726640223   |   Roll: -1.64  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640224   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640225   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640226   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640227   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.55 
+Time: 1726640228   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:92.41 
+Time: 1726640229   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640230   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640231   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640232   |   Roll: -2.14  |  Pitch: -9.93   |   Distance:91.52 
+Time: 1726640233   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.95 
+Time: 1726640234   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:91.97 
+Time: 1726640235   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640236   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640237   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.52 
+Time: 1726640238   |   Roll: -1.66  |  Pitch: -8.80   |   Distance:91.52 
+Time: 1726640239   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640240   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640241   |   Roll: -1.85  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640242   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640243   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640244   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640245   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640246   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:91.97 
+Time: 1726640247   |   Roll: -1.64  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640248   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.97 
+Time: 1726640249   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640250   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:91.52 
+Time: 1726640251   |   Roll: -2.18  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640252   |   Roll: -1.47  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640253   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640254   |   Roll: -1.86  |  Pitch: -9.78   |   Distance:91.50 
+Time: 1726640255   |   Roll: -1.87  |  Pitch: -9.76   |   Distance:91.98 
+Time: 1726640256   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.52 
+Time: 1726640257   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.50 
+Time: 1726640258   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:92.41 
+Time: 1726640259   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640260   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640261   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.53 
+Time: 1726640262   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.53 
+Time: 1726640263   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640264   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.98 
+Time: 1726640265   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640266   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:92.43 
+Time: 1726640267   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:92.41 
+Time: 1726640268   |   Roll: -1.83  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640269   |   Roll: -1.84  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640270   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640271   |   Roll: -1.83  |  Pitch: -9.73   |   Distance:91.52 
+Time: 1726640272   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.55 
+Time: 1726640273   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640274   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:92.41 
+Time: 1726640275   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640276   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.53 
+Time: 1726640277   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:92.41 
+Time: 1726640278   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:92.40 
+Time: 1726640279   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640280   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640281   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640282   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640283   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640284   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640285   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.53 
+Time: 1726640286   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:92.43 
+Time: 1726640287   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640288   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640289   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:92.41 
+Time: 1726640290   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640291   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.52 
+Time: 1726640292   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640293   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:92.40 
+Time: 1726640294   |   Roll: -2.29  |  Pitch: -9.70   |   Distance:91.97 
+Time: 1726640295   |   Roll: -1.50  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640296   |   Roll: -2.19  |  Pitch: -9.12   |   Distance:91.55 
+Time: 1726640297   |   Roll: -1.69  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640298   |   Roll: -1.65  |  Pitch: -8.79   |   Distance:91.98 
+Time: 1726640299   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640300   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640301   |   Roll: -1.87  |  Pitch: -9.76   |   Distance:92.00 
+Time: 1726640302   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640303   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640304   |   Roll: -1.68  |  Pitch: -8.80   |   Distance:91.50 
+Time: 1726640305   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.52 
+Time: 1726640306   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:91.53 
+Time: 1726640307   |   Roll: -1.84  |  Pitch: -9.77   |   Distance:91.50 
+Time: 1726640308   |   Roll: -1.85  |  Pitch: -9.78   |   Distance:91.52 
+Time: 1726640309   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.50 
+Time: 1726640310   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640311   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640312   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640313   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.55 
+Time: 1726640314   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.52 
+Time: 1726640315   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.10 
+Time: 1726640316   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640317   |   Roll: -1.84  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640318   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640319   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.50 
+Time: 1726640320   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640321   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640322   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640323   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.52 
+Time: 1726640324   |   Roll: -1.83  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640325   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640326   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.50 
+Time: 1726640327   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.98 
+Time: 1726640328   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:92.41 
+Time: 1726640329   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640330   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.53 
+Time: 1726640331   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:92.40 
+Time: 1726640332   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640333   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:92.00 
+Time: 1726640334   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:92.00 
+Time: 1726640335   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.98 
+Time: 1726640336   |   Roll: -1.67  |  Pitch: -8.79   |   Distance:92.41 
+Time: 1726640337   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:92.40 
+Time: 1726640338   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640339   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:92.40 
+Time: 1726640340   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640341   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.98 
+Time: 1726640342   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.50 
+Time: 1726640343   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640344   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:92.38 
+Time: 1726640345   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.50 
+Time: 1726640346   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640347   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.48 
+Time: 1726640348   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640349   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640350   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.97 
+Time: 1726640351   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640352   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640353   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:92.38 
+Time: 1726640354   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640355   |   Roll: -1.84  |  Pitch: -9.75   |   Distance:92.40 
+Time: 1726640356   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:92.41 
+Time: 1726640357   |   Roll: -1.64  |  Pitch: -8.77   |   Distance:92.40 
+Time: 1726640358   |   Roll: -1.69  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640359   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640360   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640361   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.53 
+Time: 1726640362   |   Roll: -1.83  |  Pitch: -9.76   |   Distance:91.50 
+Time: 1726640363   |   Roll: -1.84  |  Pitch: -9.76   |   Distance:91.48 
+Time: 1726640364   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640365   |   Roll: -1.87  |  Pitch: -9.76   |   Distance:91.50 
+Time: 1726640366   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640367   |   Roll: -1.65  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640368   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640369   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.98 
+Time: 1726640370   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.55 
+Time: 1726640371   |   Roll: -1.84  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640372   |   Roll: -1.88  |  Pitch: -9.75   |   Distance:91.55 
+Time: 1726640373   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.98 
+Time: 1726640374   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640375   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640376   |   Roll: -1.88  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640377   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640378   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:92.41 
+Time: 1726640379   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.97 
+Time: 1726640380   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640381   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640382   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640383   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640384   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640385   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640386   |   Roll: -1.68  |  Pitch: -8.79   |   Distance:91.48 
+Time: 1726640387   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640388   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640389   |   Roll: -1.87  |  Pitch: -9.76   |   Distance:91.50 
+Time: 1726640390   |   Roll: -1.86  |  Pitch: -9.77   |   Distance:91.48 
+Time: 1726640391   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640392   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.97 
+Time: 1726640393   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:92.38 
+Time: 1726640394   |   Roll: -1.84  |  Pitch: -9.75   |   Distance:91.48 
+Time: 1726640395   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640396   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640397   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640398   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640399   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.53 
+Time: 1726640400   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.09 
+Time: 1726640401   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.48 
+Time: 1726640402   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.52 
+Time: 1726640403   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640404   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.53 
+Time: 1726640405   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640406   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640407   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640408   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640409   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.53 
+Time: 1726640410   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640411   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640412   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640413   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.10 
+Time: 1726640414   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640415   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:91.53 
+Time: 1726640416   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640417   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.48 
+Time: 1726640418   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.98 
+Time: 1726640419   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.10 
+Time: 1726640420   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.50 
+Time: 1726640421   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.97 
+Time: 1726640422   |   Roll: -1.87  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640423   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.53 
+Time: 1726640424   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.57 
+Time: 1726640425   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:92.41 
+Time: 1726640426   |   Roll: -1.68  |  Pitch: -8.78   |   Distance:92.00 
+Time: 1726640427   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.53 
+Time: 1726640428   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.57 
+Time: 1726640429   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640430   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.98 
+Time: 1726640431   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640432   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640433   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.55 
+Time: 1726640434   |   Roll: -1.68  |  Pitch: -8.78   |   Distance:91.55 
+Time: 1726640435   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.55 
+Time: 1726640436   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:92.00 
+Time: 1726640437   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.53 
+Time: 1726640438   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.53 
+Time: 1726640439   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:92.41 
+Time: 1726640440   |   Roll: -1.68  |  Pitch: -8.78   |   Distance:92.41 
+Time: 1726640441   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:92.40 
+Time: 1726640442   |   Roll: -1.66  |  Pitch: -8.79   |   Distance:91.55 
+Time: 1726640443   |   Roll: -1.84  |  Pitch: -9.74   |   Distance:91.55 
+Time: 1726640444   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.95 
+Time: 1726640445   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:92.00 
+Time: 1726640446   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:92.41 
+Time: 1726640447   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640448   |   Roll: -1.65  |  Pitch: -8.76   |   Distance:91.97 
+Time: 1726640449   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640450   |   Roll: -1.69  |  Pitch: -8.76   |   Distance:91.48 
+Time: 1726640451   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.97 
+Time: 1726640452   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640453   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.97 
+Time: 1726640454   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.53 
+Time: 1726640455   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:92.41 
+Time: 1726640456   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640457   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.57 
+Time: 1726640458   |   Roll: -1.69  |  Pitch: -8.78   |   Distance:91.98 
+Time: 1726640459   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640460   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.95 
+Time: 1726640461   |   Roll: -1.87  |  Pitch: -9.76   |   Distance:91.97 
+Time: 1726640462   |   Roll: -1.84  |  Pitch: -9.75   |   Distance:92.41 
+Time: 1726640463   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:92.38 
+Time: 1726640464   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.98 
+Time: 1726640465   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:92.41 
+Time: 1726640466   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.95 
+Time: 1726640467   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640468   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.53 
+Time: 1726640469   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.97 
+Time: 1726640470   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.55 
+Time: 1726640471   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.53 
+Time: 1726640472   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:92.41 
+Time: 1726640473   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640474   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640475   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.55 
+Time: 1726640476   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.55 
+Time: 1726640477   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:92.40 
+Time: 1726640478   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640479   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.97 
+Time: 1726640480   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:92.38 
+Time: 1726640481   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.53 
+Time: 1726640482   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640483   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.95 
+Time: 1726640484   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.50 
+I (361566) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)
+I (361566) wifi:<ba-del>idx:0, tid:0
+I (361566) wifi:[ADDBA]RX DELBA, reason:39, delete tid:4, initiator:1(originator)
+I (361576) wifi:<ba-del>idx:1, tid:4
+Time: 1726640485   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640486   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:91.97 
+Time: 1726640487   |   Roll: -2.24  |  Pitch: -9.73   |   Distance:91.97 
+Time: 1726640488   |   Roll: -1.51  |  Pitch: -8.78   |   Distance:92.41 
+Time: 1726640489   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.48 
+I (366806) wifi:<ba-add>idx:0 (ifx:0, 28:87:ba:2d:45:48), tid:0, ssn:451, winSize:64
+Time: 1726640490   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.48 
+Time: 1726640491   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.97 
+Time: 1726640492   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.53 
+Time: 1726640493   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.57 
+Time: 1726640494   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.57 
+Time: 1726640495   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.57 
+Time: 1726640496   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.57 
+Time: 1726640497   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:92.40 
+Time: 1726640498   |   Roll: -1.83  |  Pitch: -9.74   |   Distance:91.55 
+Time: 1726640499   |   Roll: -1.84  |  Pitch: -9.74   |   Distance:92.40 
+Time: 1726640500   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.55 
+Time: 1726640501   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:92.00 
+Time: 1726640502   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640503   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.57 
+Time: 1726640504   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.57 
+Time: 1726640505   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.55 
+Time: 1726640506   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:92.00 
+Time: 1726640507   |   Roll: -1.84  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640508   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.55 
+Time: 1726640509   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:92.41 
+Time: 1726640510   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.55 
+Time: 1726640511   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.98 
+Time: 1726640512   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:92.40 
+Time: 1726640513   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:92.00 
+Time: 1726640514   |   Roll: -1.68  |  Pitch: -8.78   |   Distance:91.52 
+Time: 1726640515   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.97 
+Time: 1726640516   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.55 
+Time: 1726640517   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:92.00 
+Time: 1726640518   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.12 
+Time: 1726640519   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.98 
+Time: 1726640520   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.53 
+Time: 1726640521   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.52 
+Time: 1726640522   |   Roll: -1.66  |  Pitch: -8.78   |   Distance:92.41 
+Time: 1726640523   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:92.00 
+Time: 1726640524   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.97 
+Time: 1726640525   |   Roll: -1.85  |  Pitch: -9.76   |   Distance:91.98 
+Time: 1726640526   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.98 
+Time: 1726640527   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640528   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.97 
+Time: 1726640529   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:92.00 
+Time: 1726640530   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.55 
+Time: 1726640531   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:92.00 
+Time: 1726640532   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.57 
+Time: 1726640533   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640534   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.97 
+Time: 1726640535   |   Roll: -1.88  |  Pitch: -9.72   |   Distance:91.98 
+Time: 1726640536   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.55 
+Time: 1726640537   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:92.41 
+Time: 1726640538   |   Roll: -1.67  |  Pitch: -8.78   |   Distance:91.53 
+Time: 1726640539   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.97 
+Time: 1726640540   |   Roll: -2.36  |  Pitch: -9.14   |   Distance:92.41 
+Time: 1726640541   |   Roll: -1.87  |  Pitch: -9.75   |   Distance:91.97 
+Time: 1726640542   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640543   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640544   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640545   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.97 
+Time: 1726640546   |   Roll: -1.84  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640547   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640548   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:92.41 
+Time: 1726640549   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.97 
+Time: 1726640550   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.97 
+Time: 1726640551   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640552   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:92.41 
+Time: 1726640553   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.97 
+Time: 1726640554   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640555   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640556   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640557   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.48 
+Time: 1726640558   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.91 
+Time: 1726640559   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640560   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640561   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.52 
+Time: 1726640562   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:92.41 
+Time: 1726640563   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:92.41 
+Time: 1726640564   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.97 
+Time: 1726640565   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.55 
+Time: 1726640566   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:92.41 
+Time: 1726640567   |   Roll: -1.69  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640568   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640569   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640570   |   Roll: -1.65  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640571   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640572   |   Roll: -1.84  |  Pitch: -9.72   |   Distance:92.40 
+Time: 1726640573   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640574   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:92.41 
+Time: 1726640575   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640576   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640577   |   Roll: -2.19  |  Pitch: -9.74   |   Distance:91.48 
+Time: 1726640578   |   Roll: -1.50  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640579   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:92.40 
+Time: 1726640580   |   Roll: -1.64  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640581   |   Roll: -1.65  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640582   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:92.41 
+Time: 1726640583   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640584   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640585   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640586   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640587   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640588   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640589   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:92.38 
+Time: 1726640590   |   Roll: -1.65  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640591   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640592   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640593   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640594   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640595   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.50 
+I (472566) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)
+I (472566) wifi:<ba-del>idx:0, tid:0
+Time: 1726640596   |   Roll: -2.19  |  Pitch: -9.11   |   Distance:91.47 
+Time: 1726640597   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640598   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640599   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:92.38 
+Time: 1726640600   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640601   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640602   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.52 
+Time: 1726640603   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+I (480546) wifi:<ba-add>idx:0 (ifx:0, 28:87:ba:2d:45:48), tid:0, ssn:593, winSize:64
+Time: 1726640604   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640605   |   Roll: -1.85  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640606   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640607   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640608   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640609   |   Roll: -1.84  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640610   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640611   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.97 
+Time: 1726640612   |   Roll: -2.26  |  Pitch: -9.67   |   Distance:92.38 
+Time: 1726640613   |   Roll: -1.47  |  Pitch: -8.75   |   Distance:91.53 
+Time: 1726640614   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640615   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:92.38 
+Time: 1726640616   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640617   |   Roll: -1.69  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640618   |   Roll: -1.68  |  Pitch: -8.78   |   Distance:91.50 
+Time: 1726640619   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.91 
+Time: 1726640620   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640621   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.95 
+Time: 1726640622   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640623   |   Roll: -1.65  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640624   |   Roll: -1.84  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640625   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.97 
+Time: 1726640626   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640627   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640628   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640629   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640630   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.97 
+Time: 1726640631   |   Roll: -1.87  |  Pitch: -9.70   |   Distance:91.98 
+Time: 1726640632   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640633   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640634   |   Roll: -1.69  |  Pitch: -8.76   |   Distance:91.91 
+Time: 1726640635   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640636   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640637   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640638   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:92.41 
+Time: 1726640639   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640640   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.53 
+Time: 1726640641   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640642   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640643   |   Roll: -1.84  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640644   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640645   |   Roll: -1.85  |  Pitch: -9.74   |   Distance:91.47 
+Time: 1726640646   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640647   |   Roll: -1.84  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640648   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640649   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640650   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640651   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640652   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640653   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640654   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640655   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640656   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640657   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640658   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640659   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640660   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640661   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640662   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640663   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640664   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640665   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726640666   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640667   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.48 
+Time: 1726640668   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640669   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640670   |   Roll: -1.84  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640671   |   Roll: -1.84  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640672   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.48 
+Time: 1726640673   |   Roll: -1.66  |  Pitch: -8.73   |   Distance:91.50 
+Time: 1726640674   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640675   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640676   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.53 
+Time: 1726640677   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.52 
+Time: 1726640678   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640679   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640680   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640681   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640682   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640683   |   Roll: -1.67  |  Pitch: -8.73   |   Distance:91.50 
+Time: 1726640684   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640685   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640686   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640687   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640688   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.52 
+Time: 1726640689   |   Roll: -1.89  |  Pitch: -9.73   |   Distance:91.48 
+Time: 1726640690   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640691   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.93 
+Time: 1726640692   |   Roll: -1.66  |  Pitch: -8.73   |   Distance:91.50 
+Time: 1726640693   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640694   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.97 
+Time: 1726640695   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640696   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640697   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640698   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.52 
+Time: 1726640699   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.93 
+Time: 1726640700   |   Roll: -1.86  |  Pitch: -9.76   |   Distance:91.50 
+Time: 1726640701   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.53 
+Time: 1726640702   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640703   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726640704   |   Roll: -1.88  |  Pitch: -9.72   |   Distance:91.53 
+Time: 1726640705   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.48 
+Time: 1726640706   |   Roll: -1.84  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640707   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640708   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640709   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640710   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640711   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.48 
+Time: 1726640712   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.97 
+Time: 1726640713   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.95 
+Time: 1726640714   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640715   |   Roll: -1.86  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640716   |   Roll: -1.83  |  Pitch: -9.73   |   Distance:91.52 
+Time: 1726640717   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640718   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640719   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640720   |   Roll: -1.70  |  Pitch: -8.75   |   Distance:91.48 
+Time: 1726640721   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.48 
+Time: 1726640722   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640723   |   Roll: -1.84  |  Pitch: -9.75   |   Distance:91.50 
+Time: 1726640724   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640725   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:92.38 
+Time: 1726640726   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640727   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640728   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640729   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640730   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640731   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640732   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640733   |   Roll: -1.85  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726640734   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726640735   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.95 
+Time: 1726640736   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640737   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640738   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640739   |   Roll: -1.84  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640740   |   Roll: -1.84  |  Pitch: -9.73   |   Distance:92.38 
+Time: 1726640741   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640742   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640743   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640744   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640745   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640746   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640747   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640748   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640749   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.47 
+Time: 1726640750   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640751   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640752   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640753   |   Roll: -1.84  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640754   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640755   |   Roll: -1.66  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640756   |   Roll: -1.84  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640757   |   Roll: -1.85  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640758   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640759   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.48 
+Time: 1726640760   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640761   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640762   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640763   |   Roll: -1.64  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640764   |   Roll: -1.84  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726640765   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640766   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640767   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640768   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:92.38 
+Time: 1726640769   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640770   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640771   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640772   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640773   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:92.41 
+Time: 1726640774   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640775   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:92.40 
+Time: 1726640776   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640777   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.53 
+Time: 1726640778   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.93 
+Time: 1726640779   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640780   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640781   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640782   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.48 
+Time: 1726640783   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.48 
+Time: 1726640784   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:92.40 
+Time: 1726640785   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.52 
+Time: 1726640786   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640787   |   Roll: -1.66  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640788   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640789   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640790   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640791   |   Roll: -1.90  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640792   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640793   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640794   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640795   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.52 
+Time: 1726640796   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:92.40 
+Time: 1726640797   |   Roll: -2.26  |  Pitch: -9.68   |   Distance:92.36 
+Time: 1726640798   |   Roll: -1.46  |  Pitch: -8.77   |   Distance:91.97 
+Time: 1726640799   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640800   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640801   |   Roll: -1.68  |  Pitch: -8.73   |   Distance:91.50 
+Time: 1726640802   |   Roll: -1.87  |  Pitch: -9.70   |   Distance:92.38 
+Time: 1726640803   |   Roll: -1.68  |  Pitch: -8.73   |   Distance:91.97 
+Time: 1726640804   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.95 
+Time: 1726640805   |   Roll: -1.88  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640806   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640807   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640808   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640809   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640810   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640811   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640812   |   Roll: -1.86  |  Pitch: -9.70   |   Distance:91.91 
+Time: 1726640813   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640814   |   Roll: -1.87  |  Pitch: -9.70   |   Distance:92.38 
+Time: 1726640815   |   Roll: -1.87  |  Pitch: -9.70   |   Distance:92.38 
+Time: 1726640816   |   Roll: -1.67  |  Pitch: -8.73   |   Distance:91.47 
+Time: 1726640817   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640818   |   Roll: -2.19  |  Pitch: -9.09   |   Distance:92.38 
+Time: 1726640819   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.91 
+Time: 1726640820   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640821   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.97 
+Time: 1726640822   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.53 
+Time: 1726640823   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.53 
+Time: 1726640824   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.53 
+Time: 1726640825   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.97 
+Time: 1726640826   |   Roll: -1.89  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640827   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.95 
+Time: 1726640828   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.48 
+Time: 1726640829   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640830   |   Roll: -1.66  |  Pitch: -8.73   |   Distance:91.50 
+Time: 1726640831   |   Roll: -1.65  |  Pitch: -8.73   |   Distance:92.38 
+Time: 1726640832   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640833   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640834   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640835   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:92.38 
+Time: 1726640836   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.90 
+Time: 1726640837   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640838   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640839   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640840   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.50 
+Time: 1726640841   |   Roll: -1.69  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640842   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.95 
+Time: 1726640843   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640844   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640845   |   Roll: -2.37  |  Pitch: -9.09   |   Distance:91.50 
+Time: 1726640846   |   Roll: -1.89  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640847   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640848   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640849   |   Roll: -1.69  |  Pitch: -8.76   |   Distance:91.95 
+Time: 1726640850   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640851   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:92.38 
+Time: 1726640852   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.97 
+Time: 1726640853   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.91 
+Time: 1726640854   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640855   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:92.38 
+Time: 1726640856   |   Roll: -2.25  |  Pitch: -9.69   |   Distance:92.38 
+Time: 1726640857   |   Roll: -1.48  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640858   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640859   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640860   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:92.38 
+Time: 1726640861   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.90 
+Time: 1726640862   |   Roll: -1.84  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640863   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640864   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.53 
+Time: 1726640865   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640866   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640867   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726640868   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640869   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:91.91 
+Time: 1726640870   |   Roll: -1.69  |  Pitch: -8.73   |   Distance:91.50 
+Time: 1726640871   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640872   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640873   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640874   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640875   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640876   |   Roll: -1.70  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640877   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640878   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:92.38 
+Time: 1726640879   |   Roll: -1.68  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640880   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:92.38 
+Time: 1726640881   |   Roll: -1.79  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640882   |   Roll: -1.64  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640883   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640884   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640885   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640886   |   Roll: -1.89  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640887   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.93 
+Time: 1726640888   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.93 
+Time: 1726640889   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.95 
+Time: 1726640890   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640891   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640892   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640893   |   Roll: -1.87  |  Pitch: -9.69   |   Distance:92.38 
+Time: 1726640894   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640895   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640896   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640897   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640898   |   Roll: -1.65  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640899   |   Roll: -1.84  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640900   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640901   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640902   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640903   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726640904   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640905   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640906   |   Roll: -1.68  |  Pitch: -8.73   |   Distance:91.50 
+Time: 1726640907   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.97 
+Time: 1726640908   |   Roll: -1.67  |  Pitch: -8.77   |   Distance:91.50 
+Time: 1726640909   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.52 
+Time: 1726640910   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640911   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640912   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:92.34 
+Time: 1726640913   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.48 
+Time: 1726640914   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640915   |   Roll: -1.84  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640916   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726640917   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726640918   |   Roll: -1.87  |  Pitch: -9.73   |   Distance:92.38 
+Time: 1726640919   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640920   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640921   |   Roll: -1.69  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726640922   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640923   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.48 
+Time: 1726640924   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726640925   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726640926   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640927   |   Roll: -1.69  |  Pitch: -8.73   |   Distance:91.47 
+Time: 1726640928   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640929   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640930   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640931   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640932   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640933   |   Roll: -1.87  |  Pitch: -9.74   |   Distance:91.47 
+Time: 1726640934   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726640935   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:92.40 
+Time: 1726640936   |   Roll: -2.27  |  Pitch: -9.69   |   Distance:91.50 
+Time: 1726640937   |   Roll: -1.49  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640938   |   Roll: -1.85  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640939   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640940   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.93 
+Time: 1726640941   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640942   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726640943   |   Roll: -1.85  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640944   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640945   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.91 
+Time: 1726640946   |   Roll: -1.69  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640947   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726640948   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640949   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.97 
+Time: 1726640950   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.97 
+Time: 1726640951   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640952   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.52 
+Time: 1726640953   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:92.38 
+Time: 1726640954   |   Roll: -1.86  |  Pitch: -9.74   |   Distance:91.95 
+Time: 1726640955   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640956   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.91 
+Time: 1726640957   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640958   |   Roll: -1.69  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640959   |   Roll: -1.88  |  Pitch: -9.70   |   Distance:91.50 
+Time: 1726640960   |   Roll: -1.63  |  Pitch: -9.73   |   Distance:91.48 
+Time: 1726640961   |   Roll: -1.62  |  Pitch: -9.72   |   Distance:91.97 
+Time: 1726640962   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.95 
+Time: 1726640963   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:92.38 
+Time: 1726640964   |   Roll: -2.22  |  Pitch: -9.12   |   Distance:91.50 
+Time: 1726640965   |   Roll: -1.88  |  Pitch: -9.75   |   Distance:91.91 
+Time: 1726640966   |   Roll: -1.85  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640967   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.90 
+Time: 1726640968   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640969   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640970   |   Roll: -1.67  |  Pitch: -8.73   |   Distance:91.47 
+Time: 1726640971   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640972   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726640973   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726640974   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640975   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640976   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640977   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640978   |   Roll: -1.85  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640979   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640980   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726640981   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.95 
+Time: 1726640982   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726640983   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:91.93 
+Time: 1726640984   |   Roll: -2.18  |  Pitch: -9.70   |   Distance:92.38 
+Time: 1726640985   |   Roll: -1.48  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640986   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726640987   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:92.38 
+Time: 1726640988   |   Roll: -2.21  |  Pitch: -9.11   |   Distance:92.38 
+Time: 1726640989   |   Roll: -1.88  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640990   |   Roll: -1.67  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726640991   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640992   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726640993   |   Roll: -1.88  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726640994   |   Roll: -1.67  |  Pitch: -8.73   |   Distance:91.47 
+Time: 1726640995   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640996   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.07 
+Time: 1726640997   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726640998   |   Roll: -1.89  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726640999   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726641000   |   Roll: -1.85  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726641001   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726641002   |   Roll: -1.88  |  Pitch: -9.71   |   Distance:91.48 
+Time: 1726641003   |   Roll: -1.68  |  Pitch: -8.76   |   Distance:91.47 
+Time: 1726641004   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:92.38 
+Time: 1726641005   |   Roll: -1.87  |  Pitch: -9.71   |   Distance:91.88 
+Time: 1726641006   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726641007   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726641008   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726641009   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726641010   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:92.38 
+Time: 1726641011   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.47 
+Time: 1726641012   |   Roll: -1.68  |  Pitch: -8.73   |   Distance:91.47 
+Time: 1726641013   |   Roll: -1.85  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726641014   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.48 
+Time: 1726641015   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:92.36 
+Time: 1726641016   |   Roll: -1.70  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726641017   |   Roll: -1.69  |  Pitch: -8.74   |   Distance:92.34 
+Time: 1726641018   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.95 
+Time: 1726641019   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.45 
+Time: 1726641020   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726641021   |   Roll: -1.67  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726641022   |   Roll: -1.89  |  Pitch: -9.70   |   Distance:91.50 
+Time: 1726641023   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726641024   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726641025   |   Roll: -1.69  |  Pitch: -8.73   |   Distance:91.47 
+Time: 1726641026   |   Roll: -1.66  |  Pitch: -8.73   |   Distance:91.47 
+Time: 1726641027   |   Roll: -1.68  |  Pitch: -8.72   |   Distance:91.47 
+Time: 1726641028   |   Roll: -1.88  |  Pitch: -9.69   |   Distance:91.50 
+Time: 1726641029   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726641030   |   Roll: -1.66  |  Pitch: -8.74   |   Distance:91.45 
+Time: 1726641031   |   Roll: -1.66  |  Pitch: -8.75   |   Distance:91.47 
+Time: 1726641032   |   Roll: -1.84  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726641033   |   Roll: 0.00  |  Pitch: 0.00   |   Distance:91.47 
+Time: 1726641034   |   Roll: -2.24  |  Pitch: -9.73   |   Distance:91.48 
+Time: 1726641035   |   Roll: -1.50  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726641036   |   Roll: -1.65  |  Pitch: -8.75   |   Distance:91.50 
+Time: 1726641037   |   Roll: -1.67  |  Pitch: -8.73   |   Distance:91.48 
+Time: 1726641038   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726641039   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.50 
+Time: 1726641040   |   Roll: -1.68  |  Pitch: -8.73   |   Distance:91.48 
+Time: 1726641041   |   Roll: -1.68  |  Pitch: -8.75   |   Distance:91.48 
+Time: 1726641042   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726641043   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.91 
+Time: 1726641044   |   Roll: -1.86  |  Pitch: -9.73   |   Distance:91.50 
+Time: 1726641045   |   Roll: -1.68  |  Pitch: -8.73   |   Distance:91.48 
+Time: 1726641046   |   Roll: -1.89  |  Pitch: -9.71   |   Distance:91.50 
+Time: 1726641047   |   Roll: -1.86  |  Pitch: -9.69   |   Distance:91.48 
+Time: 1726641048   |   Roll: -1.85  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726641049   |   Roll: -1.87  |  Pitch: -9.70   |   Distance:91.47 
+Time: 1726641050   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.91 
+Time: 1726641051   |   Roll: -1.87  |  Pitch: -9.72   |   Distance:92.34 
+Time: 1726641052   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.50 
+Time: 1726641053   |   Roll: -1.69  |  Pitch: -8.75   |   Distance:91.91 
+Time: 1726641054   |   Roll: -1.86  |  Pitch: -9.72   |   Distance:91.47 
+Time: 1726641055   |   Roll: -1.86  |  Pitch: -9.71   |   Distance:91.47 
+Time: 1726641056   |   Roll: -1.68  |  Pitch: -8.74   |   Distance:91.47 
+Time: 1726641057   |   Roll: -1.67  |  Pitch: -8.76   |   Distance:91.50 
+Time: 1726641058   |   Roll: -1.69  |  Pitch: -8.76   |   Distance:91.47 

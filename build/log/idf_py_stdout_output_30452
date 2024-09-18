@@ -1,0 +1,161 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\hario\OneDrive\Desktop\MQTT_DEV\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/hario/OneDrive/Desktop/MQTT_DEV/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj 
+ccache C:\esp\tools\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.3\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/hario/OneDrive/Desktop/MQTT_DEV/build/config -IC:/Users/hario/OneDrive/Desktop/MQTT_DEV/main -IC:/esp/esp-idf/components/newlib/platform_include -IC:/esp/esp-idf/components/freertos/config/include -IC:/esp/esp-idf/components/freertos/config/include/freertos -IC:/esp/esp-idf/components/freertos/config/xtensa/include -IC:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/esp/esp-idf/components/freertos/esp_additions/include -IC:/esp/esp-idf/components/esp_hw_support/include -IC:/esp/esp-idf/components/esp_hw_support/include/soc -IC:/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/esp/esp-idf/components/esp_hw_support/dma/include -IC:/esp/esp-idf/components/esp_hw_support/ldo/include -IC:/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/esp/esp-idf/components/esp_hw_support/port/esp32/include -IC:/esp/esp-idf/components/heap/include -IC:/esp/esp-idf/components/log/include -IC:/esp/esp-idf/components/soc/include -IC:/esp/esp-idf/components/soc/esp32 -IC:/esp/esp-idf/components/soc/esp32/include -IC:/esp/esp-idf/components/hal/platform_port/include -IC:/esp/esp-idf/components/hal/esp32/include -IC:/esp/esp-idf/components/hal/include -IC:/esp/esp-idf/components/esp_rom/include -IC:/esp/esp-idf/components/esp_rom/include/esp32 -IC:/esp/esp-idf/components/esp_rom/esp32 -IC:/esp/esp-idf/components/esp_common/include -IC:/esp/esp-idf/components/esp_system/include -IC:/esp/esp-idf/components/esp_system/port/soc -IC:/esp/esp-idf/components/esp_system/port/include/private -IC:/esp/esp-idf/components/xtensa/esp32/include -IC:/esp/esp-idf/components/xtensa/include -IC:/esp/esp-idf/components/xtensa/deprecated_include -IC:/esp/esp-idf/components/lwip/include -IC:/esp/esp-idf/components/lwip/include/apps -IC:/esp/esp-idf/components/lwip/include/apps/sntp -IC:/esp/esp-idf/components/lwip/lwip/src/include -IC:/esp/esp-idf/components/lwip/port/include -IC:/esp/esp-idf/components/lwip/port/freertos/include -IC:/esp/esp-idf/components/lwip/port/esp32xx/include -IC:/esp/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/esp/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/esp/esp-idf/examples/common_components/protocol_examples_common/include -IC:/esp/esp-idf/components/esp_driver_gpio/include -IC:/esp/esp-idf/components/esp_pm/include -IC:/esp/esp-idf/components/mbedtls/port/include -IC:/esp/esp-idf/components/mbedtls/mbedtls/include -IC:/esp/esp-idf/components/mbedtls/mbedtls/library -IC:/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/esp/esp-idf/components/esp_app_format/include -IC:/esp/esp-idf/components/esp_bootloader_format/include -IC:/esp/esp-idf/components/app_update/include -IC:/esp/esp-idf/components/bootloader_support/include -IC:/esp/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/esp/esp-idf/components/esp_partition/include -IC:/esp/esp-idf/components/efuse/include -IC:/esp/esp-idf/components/efuse/esp32/include -IC:/esp/esp-idf/components/esp_mm/include -IC:/esp/esp-idf/components/spi_flash/include -IC:/esp/esp-idf/components/pthread/include -IC:/esp/esp-idf/components/esp_timer/include -IC:/esp/esp-idf/components/esp_driver_gptimer/include -IC:/esp/esp-idf/components/esp_ringbuf/include -IC:/esp/esp-idf/components/esp_driver_uart/include -IC:/esp/esp-idf/components/vfs/include -IC:/esp/esp-idf/components/app_trace/include -IC:/esp/esp-idf/components/esp_event/include -IC:/esp/esp-idf/components/nvs_flash/include -IC:/esp/esp-idf/components/esp_driver_pcnt/include -IC:/esp/esp-idf/components/esp_driver_spi/include -IC:/esp/esp-idf/components/esp_driver_mcpwm/include -IC:/esp/esp-idf/components/esp_driver_ana_cmpr/include -IC:/esp/esp-idf/components/esp_driver_i2s/include -IC:/esp/esp-idf/components/sdmmc/include -IC:/esp/esp-idf/components/esp_driver_sdmmc/include -IC:/esp/esp-idf/components/esp_driver_sdspi/include -IC:/esp/esp-idf/components/esp_driver_sdio/include -IC:/esp/esp-idf/components/esp_driver_dac/include -IC:/esp/esp-idf/components/esp_driver_rmt/include -IC:/esp/esp-idf/components/esp_driver_tsens/include -IC:/esp/esp-idf/components/esp_driver_sdm/include -IC:/esp/esp-idf/components/esp_driver_i2c/include -IC:/esp/esp-idf/components/esp_driver_ledc/include -IC:/esp/esp-idf/components/esp_driver_parlio/include -IC:/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -IC:/esp/esp-idf/components/driver/deprecated -IC:/esp/esp-idf/components/driver/i2c/include -IC:/esp/esp-idf/components/driver/touch_sensor/include -IC:/esp/esp-idf/components/driver/twai/include -IC:/esp/esp-idf/components/driver/touch_sensor/esp32/include -IC:/esp/esp-idf/components/esp_phy/include -IC:/esp/esp-idf/components/esp_phy/esp32/include -IC:/esp/esp-idf/components/esp_vfs_console/include -IC:/esp/esp-idf/components/esp_netif/include -IC:/esp/esp-idf/components/wpa_supplicant/include -IC:/esp/esp-idf/components/wpa_supplicant/port/include -IC:/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -IC:/esp/esp-idf/components/esp_coex/include -IC:/esp/esp-idf/components/esp_wifi/include -IC:/esp/esp-idf/components/esp_wifi/wifi_apps/include -IC:/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -IC:/esp/esp-idf/components/esp_wifi/include/local -IC:/esp/esp-idf/components/unity/include -IC:/esp/esp-idf/components/unity/unity/src -IC:/esp/esp-idf/components/cmock/CMock/src -IC:/esp/esp-idf/components/console -IC:/esp/esp-idf/components/http_parser -IC:/esp/esp-idf/components/esp-tls -IC:/esp/esp-idf/components/esp-tls/esp-tls-crypto -IC:/esp/esp-idf/components/esp_adc/include -IC:/esp/esp-idf/components/esp_adc/interface -IC:/esp/esp-idf/components/esp_adc/esp32/include -IC:/esp/esp-idf/components/esp_adc/deprecated/include -IC:/esp/esp-idf/components/esp_driver_isp/include -IC:/esp/esp-idf/components/esp_driver_cam/include -IC:/esp/esp-idf/components/esp_driver_cam/interface -IC:/esp/esp-idf/components/esp_driver_jpeg/include -IC:/esp/esp-idf/components/esp_driver_ppa/include -IC:/esp/esp-idf/components/esp_eth/include -IC:/esp/esp-idf/components/esp_gdbstub/include -IC:/esp/esp-idf/components/esp_hid/include -IC:/esp/esp-idf/components/tcp_transport/include -IC:/esp/esp-idf/components/esp_http_client/include -IC:/esp/esp-idf/components/esp_http_server/include -IC:/esp/esp-idf/components/esp_https_ota/include -IC:/esp/esp-idf/components/esp_https_server/include -IC:/esp/esp-idf/components/esp_psram/include -IC:/esp/esp-idf/components/esp_lcd/include -IC:/esp/esp-idf/components/esp_lcd/interface -IC:/esp/esp-idf/components/protobuf-c/protobuf-c -IC:/esp/esp-idf/components/protocomm/include/common -IC:/esp/esp-idf/components/protocomm/include/security -IC:/esp/esp-idf/components/protocomm/include/transports -IC:/esp/esp-idf/components/protocomm/include/crypto/srp6a -IC:/esp/esp-idf/components/protocomm/proto-c -IC:/esp/esp-idf/components/esp_local_ctrl/include -IC:/esp/esp-idf/components/espcoredump/include -IC:/esp/esp-idf/components/espcoredump/include/port/xtensa -IC:/esp/esp-idf/components/wear_levelling/include -IC:/esp/esp-idf/components/fatfs/diskio -IC:/esp/esp-idf/components/fatfs/src -IC:/esp/esp-idf/components/fatfs/vfs -IC:/esp/esp-idf/components/idf_test/include -IC:/esp/esp-idf/components/idf_test/include/esp32 -IC:/esp/esp-idf/components/ieee802154/include -IC:/esp/esp-idf/components/json/cJSON -IC:/esp/esp-idf/components/mqtt/esp-mqtt/include -IC:/esp/esp-idf/components/nvs_sec_provider/include -IC:/esp/esp-idf/components/perfmon/include -IC:/esp/esp-idf/components/spiffs/include -IC:/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/hario/OneDrive/Desktop/MQTT_DEV=. -fmacro-prefix-map=C:/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\app_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -c C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:67:14: error: conflicting types for 'distance'; have 'float'
+   67 | static float distance = 0;
+      |              ^~~~~~~~
+In file included from C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:36:
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/User_Variables.h:71:8: note: previous declaration of 'distance' with type 'long int'
+   71 | long   distance;
+      |        ^~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:77:6: error: redefinition of 'RTC_FAIL'
+   77 | bool RTC_FAIL = false;
+      |      ^~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/User_Variables.h:75:6: note: previous definition of 'RTC_FAIL' with type '_Bool'
+   75 | bool RTC_FAIL = false;
+      |      ^~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c: In function 'initialize_sntp':
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:180:5: warning: 'sntp_setoperatingmode' is deprecated: use esp_sntp_setoperatingmode() instead [-Wdeprecated-declarations]
+  180 |     sntp_setoperatingmode(SNTP_OPMODE_POLL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:32:
+C:/esp/esp-idf/components/lwip/include/apps/esp_sntp.h:249:6: note: declared here
+  249 | void sntp_setoperatingmode(u8_t operating_mode)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:181:5: warning: 'sntp_setservername' is deprecated: use esp_sntp_setservername() instead [-Wdeprecated-declarations]
+  181 |     sntp_setservername(0, "pool.ntp.org");
+      |     ^~~~~~~~~~~~~~~~~~
+C:/esp/esp-idf/components/lwip/include/apps/esp_sntp.h:263:6: note: declared here
+  263 | void sntp_setservername(u8_t idx, const char *server)
+      |      ^~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:182:5: warning: 'sntp_init' is deprecated: use esp_sntp_init() instead [-Wdeprecated-declarations]
+  182 |     sntp_init();
+      |     ^~~~~~~~~
+C:/esp/esp-idf/components/lwip/include/apps/esp_sntp.h:269:6: note: declared here
+  269 | void sntp_init(void)
+      |      ^~~~~~~~~
+In file included from C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:20:
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c: In function 'wifi_event_handler':
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+C:/esp/esp-idf/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:9: note: in expansion of macro 'ESP_LOGI'
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+In file included from C:/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:43,
+                 from C:/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:46,
+                 from C:/esp/esp-idf/components/lwip/include/lwip/sockets.h:8,
+                 from C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:26:
+C:/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+C:/esp/esp-idf/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:9: note: in expansion of macro 'ESP_LOGI'
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+C:/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+C:/esp/esp-idf/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:9: note: in expansion of macro 'ESP_LOGI'
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+C:/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+C:/esp/esp-idf/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:9: note: in expansion of macro 'ESP_LOGI'
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+C:/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:50: warning: passing argument 1 of 'ip4addr_ntoa' from incompatible pointer type [-Wincompatible-pointer-types]
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |                                                  ^~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  esp_ip4_addr_t * {aka struct esp_ip4_addr *}
+C:/esp/esp-idf/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+C:/esp/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:228:9: note: in expansion of macro 'ESP_LOGI'
+  228 |         ESP_LOGI(TAG, "Got IP: %s", ip4addr_ntoa(&event->ip_info.ip));
+      |         ^~~~~~~~
+C:/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:207:38: note: expected 'const ip4_addr_t *' {aka 'const struct ip4_addr *'} but argument is of type 'esp_ip4_addr_t *' {aka 'struct esp_ip4_addr *'}
+  207 | char *ip4addr_ntoa(const ip4_addr_t *addr);
+      |                    ~~~~~~~~~~~~~~~~~~^~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c: In function 'app_main':
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:526:21: warning: initialization of 'void (*)(void *)' from incompatible pointer type 'void (*)(void)' [-Wincompatible-pointer-types]
+  526 |         .callback = &timer_callback,
+      |                     ^
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:526:21: note: (near initialization for 'timer_args.callback')
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c: At top level:
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:141:13: warning: 'mqtt_app_start' defined but not used [-Wunused-function]
+  141 | static void mqtt_app_start(void)
+      |             ^~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:67:14: warning: 'distance' defined but not used [-Wunused-variable]
+   67 | static float distance = 0;
+      |              ^~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/app_main.c:62:14: warning: 'total_roll' defined but not used [-Wunused-variable]
+   62 | static float total_roll = 0;
+      |              ^~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/User_Variables.h:69:30: warning: 'complimentary_angle' defined but not used [-Wunused-variable]
+   69 | static complimentary_angle_t complimentary_angle;
+      |                              ^~~~~~~~~~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/User_Variables.h:68:29: warning: 'gyro' defined but not used [-Wunused-variable]
+   68 | static mpu6050_gyro_value_t gyro;
+      |                             ^~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/User_Variables.h:67:29: warning: 'acce' defined but not used [-Wunused-variable]
+   67 | static mpu6050_acce_value_t acce;
+      |                             ^~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/User_Variables.h:64:25: warning: 'mpu6050_dev' defined but not used [-Wunused-variable]
+   64 | static mpu6050_handle_t mpu6050_dev = NULL;
+      |                         ^~~~~~~~~~~
+C:/Users/hario/OneDrive/Desktop/MQTT_DEV/main/User_Variables.h:44:21: warning: 'my_mutex' defined but not used [-Wunused-variable]
+   44 | static portMUX_TYPE my_mutex;
+      |                     ^~~~~~~~
+ninja: build stopped: subcommand failed.

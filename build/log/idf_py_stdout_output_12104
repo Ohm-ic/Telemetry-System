@@ -1,0 +1,253 @@
+7 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Sep 18 2024 11:44:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=267d8h (157656) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00036800 vaddr=3ffb0000 size=03f34h ( 16180) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a73c vaddr=40080000 size=058dch ( 22748) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2b08h (666376) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e2b30 vaddr=400858dc size=12e3ch ( 77372) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (445) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (465) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     MQTT_DEV[0m
+[0;32mI (473) app_init: App version:      1[0m
+[0;32mI (478) app_init: Compile time:     Sep 18 2024 11:44:06[0m
+[0;32mI (484) app_init: ELF file SHA256:  a291fbf2e...[0m
+[0;32mI (489) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (493) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (498) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (503) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (508) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (515) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFB87E8 len 00027818 (158 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 40098718 len 000078E8 (30 KiB): IRAM[0m
+[0;32mI (548) spi_flash: detected chip: generic[0m
+[0;32mI (551) spi_flash: flash io: dio[0m
+[0;33mW (555) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (566) main_task: Started on CPU0[0m
+[0;32mI (576) main_task: Calling app_main()[0m
+I (606) wifi:wifi driver task: 3ffc0774, prio:23, stack:6656, core=0
+I (616) wifi:wifi firmware version: 0caa81945
+I (616) wifi:wifi certification version: v7.0
+I (616) wifi:config NVS flash: enabled
+I (616) wifi:config nano formating: disabled
+I (616) wifi:Init data frame dynamic rx buffer num: 32
+I (626) wifi:Init static rx mgmt buffer num: 5
+I (626) wifi:Init management short buffer num: 32
+I (636) wifi:Init dynamic tx buffer num: 32
+I (636) wifi:Init static rx buffer size: 1600
+I (646) wifi:Init static rx buffer num: 10
+I (646) wifi:Init dynamic rx buffer num: 32
+[0;32mI (646) wifi_init: rx ba win: 6[0m
+[0;32mI (656) wifi_init: accept mbox: 6[0m
+[0;32mI (656) wifi_init: tcpip mbox: 32[0m
+[0;32mI (656) wifi_init: udp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp mbox: 6[0m
+[0;32mI (666) wifi_init: tcp tx win: 5760[0m
+[0;32mI (676) wifi_init: tcp rx win: 5760[0m
+[0;32mI (676) wifi_init: tcp mss: 1440[0m
+[0;32mI (676) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (686) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (696) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (776) wifi:mode : sta (b0:a7:32:2b:8e:84)
+I (776) wifi:enable tsf
+I (1296) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1, snd_ch_cfg:0x0
+I (1296) wifi:state: init -> auth (0xb0)
+I (1306) wifi:state: auth -> assoc (0x0)
+I (1316) wifi:state: assoc -> run (0x10)
+I (1446) wifi:connected with TP-Link_4548, aid = 2, channel 3, 40U, bssid = 28:87:ba:2d:45:48
+I (1446) wifi:security: WPA2-PSK, phy: bgn, rssi: -33
+I (1456) wifi:pm start, type: 1
+
+I (1456) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (1486) wifi:<ba-add>idx:0 (ifx:0, 28:87:ba:2d:45:48), tid:0, ssn:3, winSize:64
+I (1526) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2966) esp_netif_handlers: sta ip: 192.168.1.100, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2966) MQTT_MPU6050_RTC: Got IP: 192.168.1.100[0m
+[0;32mI (2966) MQTT_MPU6050_RTC: Initializing SNTP[0m
+[0;32mI (2976) MQTT_MPU6050_RTC: Waiting for system time to be set... (1/345600)[0m
+[0;32mI (4976) MQTT_MPU6050_RTC: Waiting for system time to be set... (2/345600)[0m
+[0;32mI (5886) MQTT_MPU6050_RTC: MPU6050 device ID: 104[0m
+[0;32mI (5886) MQTT_MPU6050_RTC: Other event id:7[0m
+I (5986) wifi:<ba-add>idx:1 (ifx:0, 28:87:ba:2d:45:48), tid:4, ssn:1, winSize:64
+[0;32mI (6906) main_task: Returned from app_main()[0m
+[0;32mI (6976) MQTT_MPU6050_RTC: Time synchronized successfully[0m
+[0;32mI (6976) MQTT_MPU6050_RTC: RTC time set successfully[0m
+[0;32mI (7596) MQTT_MPU6050_RTC: MQTT_EVENT_CONNECTED[0m
+Time: 1726641522   |   Roll: -353070816.00  |  Pitch: 20019484.00   |   Distance:91.79 
+[0;32mI (8126) MQTT_MPU6050_RTC: MQTT_EVENT_PUBLISHED, msg_id=32703[0m
+Time: 1726641523   |   Roll: -449132.59  |  Pitch: 25456.62   |   Distance:91.81 
+Time: 1726641524   |   Roll: -4231.48  |  Pitch: 231.09   |   Distance:91.78 
+Time: 1726641525   |   Roll: -70.29  |  Pitch: -4.84   |   Distance:91.81 
+Time: 1726641526   |   Roll: -2.78  |  Pitch: -8.67   |   Distance:91.76 
+Time: 1726641527   |   Roll: -1.69  |  Pitch: -8.82   |   Distance:92.22 
+Time: 1726641528   |   Roll: -0.56  |  Pitch: -5.63   |   Distance:197.48 
+Time: 1726641529   |   Roll: 3.48  |  Pitch: -39.01   |   Distance:190.22 
+Time: 1726641530   |   Roll: -3.48  |  Pitch: -22.75   |   Distance:3.86 
+Time: 1726641531   |   Roll: -3.37  |  Pitch: -10.64   |   Distance:4.47 
+Time: 1726641532   |   Roll: -3.25  |  Pitch: -5.15   |   Distance:3.98 
+Time: 1726641533   |   Roll: -3.34  |  Pitch: -3.68   |   Distance:4.14 
+Time: 1726641534   |   Roll: -1.78  |  Pitch: -3.73   |   Distance:4.12 
+Time: 1726641535   |   Roll: -1.92  |  Pitch: -12.30   |   Distance:4.00 
+Time: 1726641536   |   Roll: -1.77  |  Pitch: -12.82   |   Distance:4.17 
+Time: 1726641537   |   Roll: -1.83  |  Pitch: -11.31   |   Distance:3.67 
+Time: 1726641538   |   Roll: -2.74  |  Pitch: -6.77   |   Distance:3.76 
+Time: 1726641539   |   Roll: 164.26  |  Pitch: -139.98   |   Distance:3.72 
+Time: 1726641540   |   Roll: 199.96  |  Pitch: -168.89   |   Distance:3.76 
+Time: 1726641541   |   Roll: 200.41  |  Pitch: -169.36   |   Distance:3.76 
+Time: 1726641542   |   Roll: 200.54  |  Pitch: -169.37   |   Distance:3.74 
+Time: 1726641543   |   Roll: 199.70  |  Pitch: -169.34   |   Distance:3.74 
+Time: 1726641544   |   Roll: 199.82  |  Pitch: -169.35   |   Distance:3.74 
+Time: 1726641545   |   Roll: 199.63  |  Pitch: -169.34   |   Distance:3.74 
+Time: 1726641546   |   Roll: 200.38  |  Pitch: -169.37   |   Distance:3.74 
+Time: 1726641547   |   Roll: 199.93  |  Pitch: -169.35   |   Distance:3.76 
+Time: 1726641548   |   Roll: 199.99  |  Pitch: -169.35   |   Distance:3.74 
+Time: 1726641549   |   Roll: 200.52  |  Pitch: -169.36   |   Distance:3.76 
+Time: 1726641550   |   Roll: 199.93  |  Pitch: -169.35   |   Distance:3.74 
+Time: 1726641551   |   Roll: 199.77  |  Pitch: -169.35   |   Distance:4.17 
+Time: 1726641552   |   Roll: 200.83  |  Pitch: -169.38   |   Distance:4.16 
+Time: 1726641553   |   Roll: 200.58  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641554   |   Roll: 200.61  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641555   |   Roll: 200.42  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641556   |   Roll: 200.63  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641557   |   Roll: 200.39  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641558   |   Roll: 200.55  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641559   |   Roll: 200.62  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641560   |   Roll: 200.43  |  Pitch: -169.37   |   Distance:3.76 
+Time: 1726641561   |   Roll: 200.55  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641562   |   Roll: 200.56  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641563   |   Roll: 200.35  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641564   |   Roll: 200.42  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641565   |   Roll: 200.47  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641566   |   Roll: 200.58  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641567   |   Roll: 200.44  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641568   |   Roll: 200.59  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641569   |   Roll: 200.41  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641570   |   Roll: 200.47  |  Pitch: -169.37   |   Distance:4.16 
+Time: 1726641571   |   Roll: 200.61  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641572   |   Roll: 200.43  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641573   |   Roll: 200.59  |  Pitch: -169.37   |   Distance:4.17 
+Time: 1726641574   |   Roll: 199.95  |  Pitch: -169.35   |   Distance:4.16 
+Time: 1726641575   |   Roll: 200.60  |  Pitch: -169.37   |   Distance:3.69 
+Time: 1726641576   |   Roll: 200.60  |  Pitch: -169.37   |   Distance:3.69 
+Time: 1726641577   |   Roll: 200.54  |  Pitch: -169.37   |   Distance:3.69 
+Time: 1726641578   |   Roll: 200.08  |  Pitch: -169.36   |   Distance:3.67 
+Time: 1726641579   |   Roll: 193.32  |  Pitch: -163.37   |   Distance:3.50 
+Time: 1726641580   |   Roll: 16.57  |  Pitch: -14.07   |   Distance:3.55 
+Time: 1726641581   |   Roll: 0.27  |  Pitch: -0.23   |   Distance:3.55 
+Time: 1726641582   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641583   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641584   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641585   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.53 
+Time: 1726641586   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641587   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641588   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641589   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641590   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641591   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641592   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641593   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641594   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641595   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641596   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641597   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641598   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.59 
+Time: 1726641599   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641600   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641601   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641602   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641603   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641604   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.53 
+Time: 1726641605   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641606   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641607   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641608   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641609   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641610   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641611   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641612   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641613   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641614   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641615   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641616   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641617   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641618   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641619   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641620   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641621   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641622   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641623   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641624   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641625   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641626   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641627   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641628   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641629   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641630   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641631   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641632   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641633   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641634   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641635   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.53 
+Time: 1726641636   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641637   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641638   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641639   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641640   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641641   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641642   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641643   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641644   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641645   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641646   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641647   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641648   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641649   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641650   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641651   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.53 
+Time: 1726641652   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641653   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641654   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.53 
+Time: 1726641655   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641656   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641657   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641658   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641659   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641660   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641661   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.53 
+Time: 1726641662   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.57 
+Time: 1726641663   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641664   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641665   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
+Time: 1726641666   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.53 
+Time: 1726641667   |   Roll: 0.00  |  Pitch: -0.00   |   Distance:3.55 
